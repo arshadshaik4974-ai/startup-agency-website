@@ -37,14 +37,20 @@ export const WeddingPage = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex flex-col w-full gap-3 mb-10"
           >
-            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-5 text-lg font-bold text-gray-800 flex items-center justify-center gap-3">
-              💡 I HAVE A BUSINESS IDEA
+            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-4 text-base font-bold text-gray-800 flex items-center justify-center gap-3">
+              💡 BUSINESS IDEA
             </div>
-            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-5 text-lg font-bold text-gray-800 flex items-center justify-center gap-3">
-              📱 I WANT AN APP
+            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-4 text-base font-bold text-gray-800 flex items-center justify-center gap-3">
+              📱 APP IDEA
             </div>
-            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-5 text-lg font-bold text-gray-800 flex items-center justify-center gap-3">
-              🌐 I WANT A WEBSITE
+            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-4 text-base font-bold text-gray-800 flex items-center justify-center gap-3">
+              🌐 WEBSITE IDEA
+            </div>
+            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-4 text-base font-bold text-gray-800 flex items-center justify-center gap-3">
+              🚀 STARTUP IDEA
+            </div>
+            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-4 text-base font-bold text-gray-800 flex items-center justify-center gap-3">
+              ❓ I'M NOT SURE YET
             </div>
           </motion.div>
 
@@ -58,7 +64,7 @@ export const WeddingPage = () => {
               href="#form"
               className="w-full inline-flex items-center justify-center px-8 py-5 bg-black text-white rounded-2xl font-bold text-lg active:scale-95 transition-transform"
             >
-              TELL US YOUR IDEA — FREE
+              START MY IDEA 🚀
             </a>
             <a 
               href="https://wa.me/"
@@ -67,7 +73,7 @@ export const WeddingPage = () => {
               className="w-full inline-flex items-center justify-center gap-2 px-8 py-5 bg-[#25D366] text-white rounded-2xl font-bold text-lg active:scale-95 transition-transform"
             >
               <MessageCircle className="w-6 h-6" />
-              OR CHAT WITH US ON WHATSAPP
+              CHAT WITH US ON WHATSAPP
             </a>
           </motion.div>
         </section>

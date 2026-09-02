@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Check, ArrowRight, ArrowLeft, MessageCircle } from 'lucide-react';
+import { Check, ArrowRight, ArrowLeft } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 // Multi-select helper
@@ -25,6 +25,7 @@ export const ShortLeadForm = () => {
     currentSolution: '',
     solutionGap: '',
     seriousness: '',
+    arePeoplePaying: '',
     
     solution: '',
     endUsers: '',
@@ -46,6 +47,7 @@ Where it happens: ${formData.problemLocation || 'Not specified'}
 Current solutions: ${formData.currentSolution || 'Not specified'}
 Why current solutions fail: ${formData.solutionGap || 'Not specified'}
 Seriousness: ${formData.seriousness || 'Not specified'}
+Are people paying for a solution: ${formData.arePeoplePaying || 'Not specified'}
 
 [SOLUTION & BUSINESS MODEL]
 End users: ${formData.endUsers || 'Not specified'}
@@ -294,6 +296,24 @@ ${formData.extraNotes || 'None'}`;
                                 onClick={() => setFormData({ ...formData, seriousness: opt })}
                                 className={`px-4 py-2 rounded-lg text-sm font-medium border transition-all ${
                                   formData.seriousness === opt ? 'bg-black text-white border-black' : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'
+                                }`}
+                              >
+                                {opt}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+
+                        <div>
+                          <label className="block text-sm font-bold text-gray-700 mb-3">7. Are people already paying for a solution?</label>
+                          <div className="flex flex-wrap gap-2">
+                            {['Yes', 'No', "I'm not sure"].map((opt) => (
+                              <button
+                                key={opt}
+                                type="button"
+                                onClick={() => setFormData({ ...formData, arePeoplePaying: opt })}
+                                className={`px-4 py-2 rounded-lg text-sm font-medium border transition-all ${
+                                  formData.arePeoplePaying === opt ? 'bg-black text-white border-black' : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'
                                 }`}
                               >
                                 {opt}
