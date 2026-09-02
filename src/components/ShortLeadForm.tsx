@@ -35,6 +35,9 @@ export const ShortLeadForm = () => {
       idea: formData.idea,
       startup_name: 'Not provided',
       startup_stage: 'Just an Idea',
+      problem: 'Not provided',
+      solution_difference: 'Not provided',
+      support_needed: [],
       status: 'new'
     };
 
