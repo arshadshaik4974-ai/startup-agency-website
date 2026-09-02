@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
-import { WhatCanWeBuild } from '../components/WhatCanWeBuild';
 import { ProcessSection } from '../components/ProcessSection';
 import { ShortLeadForm } from '../components/ShortLeadForm';
 import { Navbar } from '../components/Navbar';
@@ -65,10 +64,6 @@ export const WeddingPage = () => {
             </a>
           </motion.div>
         </section>
-
-        <div id="services">
-          <WhatCanWeBuild />
-        </div>
         
         <ProcessSection />
         

@@ -1,7 +1,6 @@
 import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
 import { TrustSection } from '../components/TrustSection';
-import { WhatCanWeBuild } from '../components/WhatCanWeBuild';
 import { ProcessSection } from '../components/ProcessSection';
 import { YoungFounderSection } from '../components/YoungFounderSection';
 import { StartupForm } from '../components/StartupForm';
@@ -15,9 +14,6 @@ export const PublicHome = () => {
       <main>
         <Hero />
         <TrustSection />
-        <div id="services">
-          <WhatCanWeBuild />
-        </div>
         <YoungFounderSection />
         <ProcessSection />
         <StartupForm />
