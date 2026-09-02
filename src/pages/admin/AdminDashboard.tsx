@@ -204,11 +204,13 @@ export const AdminDashboard = () => {
                         </div>
                       )}
                       {sub.additional_message && (
-                        <div>
-                          <h4 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                            <MessageSquare className="w-3.5 h-3.5" /> Additional Message
+                        <div className="mt-8 border-t border-gray-100 pt-6">
+                          <h4 className="text-sm font-bold text-gray-900 uppercase tracking-widest mb-4 flex items-center gap-2">
+                            <MessageSquare className="w-4 h-4 text-gray-400" /> Full Idea Discovery Brief
                           </h4>
-                          <p className="text-sm text-gray-700 leading-relaxed bg-gray-50 p-4 rounded-xl">{sub.additional_message}</p>
+                          <div className="text-sm text-gray-700 leading-relaxed bg-gray-50 border border-gray-100 p-6 rounded-2xl whitespace-pre-wrap font-medium">
+                            {sub.additional_message}
+                          </div>
                         </div>
                       )}
                     </div>
