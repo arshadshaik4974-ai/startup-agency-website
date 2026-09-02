@@ -500,15 +500,6 @@ ${formData.extraNotes || 'None'}`;
                 </ol>
               </div>
 
-              <a
-                href="https://wa.me/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#25D366] text-white rounded-full font-bold text-lg hover:bg-[#20bd5a] transition-all active:scale-95"
-              >
-                <MessageCircle className="w-6 h-6" />
-                CHAT WITH US ON WHATSAPP
-              </a>
             </motion.div>
           )}
         </AnimatePresence>
