@@ -5,9 +5,8 @@ import { supabase } from '../lib/supabase';
 
 const buildOptions = [
   "Website",
-  "Mobile App",
-  "E-commerce",
-  "Online Business",
+  "App",
+  "Online Store",
   "Startup",
   "Other"
 ];

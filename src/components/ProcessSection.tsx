@@ -1,28 +1,25 @@
 import { motion } from 'framer-motion';
 
 const steps = [
-  { icon: "💡", title: "IDEA", desc: "Share your vision with us." },
-  { icon: "📝", title: "PLAN", desc: "We map out the strategy." },
-  { icon: "🎨", title: "DESIGN", desc: "Crafting beautiful interfaces." },
-  { icon: "💻", title: "BUILD", desc: "Developing robust solutions." },
-  { icon: "🚀", title: "LAUNCH", desc: "Going live to the world." }
+  { icon: "1️⃣", title: "TELL US", desc: "Tell us your idea." },
+  { icon: "2️⃣", title: "WE BUILD", desc: "We turn the idea into a real product." },
+  { icon: "3️⃣", title: "YOU LAUNCH 🚀", desc: "Your website, app or business goes live." }
 ];
 
 export const ProcessSection = () => {
   return (
-    <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+    <section className="py-24 px-6 md:px-12 max-w-5xl mx-auto">
       <div className="mb-16 text-center">
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
           How It Works
         </h2>
-        <p className="text-gray-500 text-lg">A simple process to bring your idea to life.</p>
       </div>
 
       <div className="relative">
         {/* Connecting Line for Desktop */}
-        <div className="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gray-100 -z-10" />
+        <div className="hidden md:block absolute top-12 left-[15%] right-[15%] h-0.5 bg-gray-100 -z-10" />
         
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, idx) => (
             <motion.div 
               key={idx}
@@ -36,7 +33,7 @@ export const ProcessSection = () => {
                 {step.icon}
               </div>
               <h3 className="text-xl font-bold mb-2 text-gray-900">{step.title}</h3>
-              <p className="text-gray-500 text-sm">{step.desc}</p>
+              <p className="text-gray-500 text-lg">{step.desc}</p>
             </motion.div>
           ))}
         </div>

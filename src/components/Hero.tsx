@@ -20,8 +20,8 @@ export const Hero = () => {
         transition={{ duration: 0.5, delay: 0.1 }}
         className="text-5xl md:text-7xl font-bold tracking-tighter text-gray-900 mb-6 leading-tight"
       >
-        GOT AN IDEA? 🚀<br />
-        DON'T JUST DREAM IT. BUILD IT.
+        GOT AN IDEA?<br />
+        LET'S BUILD IT. 🚀
       </motion.h1>
 
       <motion.p 
@@ -30,7 +30,7 @@ export const Hero = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="text-lg md:text-xl text-gray-500 max-w-2xl mb-10 leading-relaxed"
       >
-        Have a business idea, website idea, or app idea? Tell us about it. We'll help you turn your idea into reality.
+        Website, app, online business or startup idea? Tell us what you're thinking. We'll help you turn it into something real.
       </motion.p>
 
       <motion.div 
@@ -43,13 +43,13 @@ export const Hero = () => {
           href="#form"
           className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-black text-white rounded-full font-medium text-lg hover:bg-gray-800 transition-all hover:scale-105 active:scale-95 group"
         >
-          START MY IDEA 🚀
+          TELL US YOUR IDEA 🚀
         </a>
         <a 
           href="#services"
           className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black border border-gray-200 rounded-full font-medium text-lg hover:bg-gray-50 transition-all hover:scale-105 active:scale-95 group"
         >
-          EXPLORE WHAT WE BUILD
+          SEE WHAT WE BUILD
         </a>
       </motion.div>
       <motion.p 

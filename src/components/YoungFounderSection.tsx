@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
 
 export const YoungFounderSection = () => {
   return (
@@ -12,7 +11,7 @@ export const YoungFounderSection = () => {
           transition={{ duration: 0.5 }}
           className="text-4xl md:text-6xl font-bold tracking-tight mb-8"
         >
-          YOUR AGE DOESN'T MATTER.<br className="hidden md:block" /> YOUR IDEA DOES.
+          HAVE AN IDEA?
         </motion.h2>
 
         <motion.p 
@@ -22,7 +21,9 @@ export const YoungFounderSection = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-lg md:text-2xl text-gray-400 mb-12 leading-relaxed"
         >
-          Whether you're a student, first-time founder, creator, or business owner, your idea deserves a chance. Tell us what you're thinking and we'll help you figure out what to build next.
+          Don't worry if you don't know how to build it.<br />
+          Just tell us what you have in mind.<br />
+          We'll help you figure out the rest.
         </motion.p>
 
         <motion.div
@@ -35,8 +36,7 @@ export const YoungFounderSection = () => {
             href="#form"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black rounded-full font-medium text-lg hover:bg-gray-200 transition-all hover:scale-105 active:scale-95 group"
           >
-            TELL US YOUR IDEA — FREE
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            START MY IDEA
           </a>
         </motion.div>
       </div>
