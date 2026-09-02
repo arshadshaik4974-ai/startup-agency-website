@@ -15,7 +15,7 @@ export const ShortLeadForm = () => {
 
   const [formData, setFormData] = useState({
     name: '',
-    whatsapp: '',
+    whatsapp: '+91 ',
     role: '',
     location: '',
     
@@ -90,8 +90,7 @@ ${formData.extraNotes || 'None'}`;
 
   const nextStep = () => setStep(prev => Math.min(prev + 1, 3));
   const prevStep = () => setStep(prev => Math.max(prev - 1, 1));
-
-  const isStep1Valid = formData.name.trim() !== '' && formData.whatsapp.trim() !== '';
+  const isStep1Valid = formData.name.trim() !== '' && formData.whatsapp.trim().length > 4;
 
   return (
     <section id="form" className="py-24 px-6 md:px-12 max-w-4xl mx-auto">
@@ -153,14 +152,19 @@ ${formData.extraNotes || 'None'}`;
 
                         <div>
                           <label className="block text-sm font-bold text-gray-700 mb-2">2. WhatsApp Number *</label>
-                          <input
-                            required
-                            type="tel"
-                            value={formData.whatsapp}
-                            onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
-                            className="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all text-lg"
-                            placeholder="+1 (234) 567-8900"
-                          />
+                          <div className="flex relative">
+                            <span className="absolute inset-y-0 left-0 flex items-center pl-5 text-gray-500 font-bold text-lg pointer-events-none">
+                              +91
+                            </span>
+                            <input
+                              required
+                              type="tel"
+                              value={formData.whatsapp.replace(/^\+91\s*/, '')}
+                              onChange={(e) => setFormData({ ...formData, whatsapp: '+91 ' + e.target.value })}
+                              className="w-full pl-16 pr-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all text-lg"
+                              placeholder="98765 43210"
+                            />
+                          </div>
                         </div>
 
                         <div>
