@@ -13,9 +13,7 @@ export const WhatCanWeBuild = () => {
     <section className="py-24 px-6 md:px-12 bg-gray-50" id="services">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
-            What Can We Build?
-          </h2>
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-gray-900 uppercase">SOLUTIONS WE BUILD</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
