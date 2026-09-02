@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export const Hero = () => {
@@ -20,8 +20,8 @@ export const Hero = () => {
         transition={{ duration: 0.5, delay: 0.1 }}
         className="text-5xl md:text-7xl font-bold tracking-tighter text-gray-900 mb-6 leading-tight"
       >
-        Have an idea?<br />
-        Let's build it together.
+        GOT AN IDEA? 🚀<br />
+        DON'T JUST DREAM IT. BUILD IT.
       </motion.h1>
 
       <motion.p 
@@ -30,25 +30,36 @@ export const Hero = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="text-lg md:text-xl text-gray-500 max-w-2xl mb-10 leading-relaxed"
       >
-        You don't need a perfect plan, a big team, or funding to get started. 
-        Share your idea with us and take the first step.
+        Have a business idea, website idea, or app idea? Tell us about it. We'll help you turn your idea into reality.
       </motion.p>
 
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className="flex flex-col items-center gap-4"
+        className="flex flex-col md:flex-row items-center gap-4 mb-4"
       >
         <a 
           href="#form"
           className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-black text-white rounded-full font-medium text-lg hover:bg-gray-800 transition-all hover:scale-105 active:scale-95 group"
         >
-          Share Your Idea 
-          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          START MY IDEA 🚀
         </a>
-        <p className="text-sm text-gray-400 font-medium">Your idea is safe & confidential.</p>
+        <a 
+          href="#services"
+          className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black border border-gray-200 rounded-full font-medium text-lg hover:bg-gray-50 transition-all hover:scale-105 active:scale-95 group"
+        >
+          EXPLORE WHAT WE BUILD
+        </a>
       </motion.div>
+      <motion.p 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="text-sm text-gray-400 font-medium"
+      >
+        Your idea is safe & confidential.
+      </motion.p>
     </section>
   );
 };

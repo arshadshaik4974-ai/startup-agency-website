@@ -1,7 +1,9 @@
 import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
 import { TrustSection } from '../components/TrustSection';
-import { HowItWorks } from '../components/HowItWorks';
+import { WhatCanWeBuild } from '../components/WhatCanWeBuild';
+import { ProcessSection } from '../components/ProcessSection';
+import { YoungFounderSection } from '../components/YoungFounderSection';
 import { StartupForm } from '../components/StartupForm';
 import { Footer } from '../components/Footer';
 
@@ -13,7 +15,11 @@ export const PublicHome = () => {
       <main>
         <Hero />
         <TrustSection />
-        <HowItWorks />
+        <div id="services">
+          <WhatCanWeBuild />
+        </div>
+        <YoungFounderSection />
+        <ProcessSection />
         <StartupForm />
       </main>
 

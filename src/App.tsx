@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { PublicHome } from './pages/PublicHome';
+import { WeddingPage } from './pages/WeddingPage';
 import { AuthProvider } from './contexts/AuthContext';
 import { AdminLogin } from './pages/admin/AdminLogin';
 import { AdminSetup2FA } from './pages/admin/AdminSetup2FA';
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<PublicHome />} />
+          <Route path="/wedding" element={<WeddingPage />} />
           
           <Route path="/admin/login" element={<AdminLogin />} />
           
